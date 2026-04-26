@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voxel Christmas Tree</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: radial-gradient(circle at top, #112238 0%, #050510 55%, #020208 100%);
+            color: #f4f7fb;
+        }
+
+        canvas {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .app-panel {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+            max-width: 280px;
+            padding: 16px 18px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            background: rgba(4, 10, 22, 0.68);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .app-panel h1 {
+            margin: 0 0 8px;
+            font-size: 1.25rem;
+            color: #9cff7d;
+        }
+
+        .app-panel p {
+            margin: 0 0 12px;
+            line-height: 1.5;
+            color: rgba(244, 247, 251, 0.86);
+        }
+
+        .app-panel ul {
+            margin: 0;
+            padding-left: 18px;
+            color: rgba(244, 247, 251, 0.82);
+        }
+
+        .app-panel li + li {
+            margin-top: 6px;
+        }
+
+        @media (max-width: 720px) {
+            .app-panel {
+                top: auto;
+                right: 12px;
+                bottom: 12px;
+                left: 12px;
+                max-width: none;
+            }
+        }
+    </style>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.180.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.180.0/examples/jsm/"
+            }
+        }
+    </script>
+  <script type="module" crossorigin src="/assets/index-D9ZCyKNp.js"></script>
+</head>
+<body>
+</body>
+</html>
